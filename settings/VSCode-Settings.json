@@ -1,0 +1,81 @@
+{
+    // Configurações do editor
+    "explorer.confirmDragAndDrop": false,
+    "json.schemas": [],
+    "python.interpreter.infoVisibility": "onPythonRelated",
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "python.languageServer": "Pylance",
+    "editor.formatOnSave": true,
+    "editor.inlineSuggest.enabled": true,
+    "pylint.showNotifications": "onError",
+
+    // Configurações do terminal
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontWeight": "600",
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.hideOnStartup": "always",
+
+    // Configurações do Git
+    "git.confirmSync": true,
+
+    // Configurações de View e Layout
+    "symbols.hidesExplorerArrows": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "window.commandCenter": false,
+    "window.titleBarStyle": "custom",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.iconTheme": "ayu",
+    "workbench.colorTheme": "Cold Python Theme",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 16,
+    "editor.fontWeight": "500",
+    "editor.lineHeight": 2.0,
+    "editor.rulers": [
+        90, // Define uma guia de recuo em 80 caracteres
+        120 // Define uma segunda guia de recuo em 120 caracteres
+    ],
+    "editor.renderLineHighlight": "gutter",
+    "editor.fontLigatures": true,
+    "workbench.editor.labelFormat": "short",
+    "explorer.compactFolders": false,
+    "editor.semanticHighlighting.enabled": false,
+    "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "side",
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "workbench.statusBar.visible": true,
+    "workbench.settings.editor": "json",
+
+    // Configurações do plugin APC
+    "apc.electron": {
+        "titleBarStyle": "hiddenInset",
+        "frame": false
+    },
+    "apc.header": {
+        "height": 36
+    },
+    "apc.listRow": {
+        "height": 24
+    },
+    "apc.font.family": "Inter",
+    
+    "apc.stylesheet": {
+        ".title-label > h2": "display: none",
+        ".editor-actions": "display: none",
+        ".pane-body": "padding: 8px",
+        ".pane-header": "padding: 0 8px",
+        ".split-view-view:first-child .paneheader": "display: none !important;",
+        ".monaco-list-row": "border-radius: 4px;",
+        "monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"       
+    },
+    "color-highlight.markerType": "foreground",
+    "color-highlight.matchRgbWithNoFunction": true,
+    "color-highlight.matchHslWithNoFunction": true,
+    "resmon.show.battery": false,
+    "resmon.show.cputemp": true,
+    "git.openRepositoryInParentFolders": "never",
+}

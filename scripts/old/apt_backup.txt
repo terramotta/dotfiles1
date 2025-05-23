@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Função para instalar aplicativos e ferramentas
+function install_apps {
+    echo "Instalando aplicativos e ferramentas essenciais..."
+
+    # Instalar aplicativos básicos via APT
+    echo "Instalando aplicativos básicos via APT..."
+    sudo apt install -y firefox vlc gimp
+
+    # Instalar ferramentas de desenvolvimento via APT
+    echo "Instalando ferramentas de desenvolvimento via APT..."
+    sudo apt install -y build-essential git
+
+    # Instalar utilitários via APT
+    echo "Instalando utilitários via APT..."
+    sudo apt install -y htop curl
+
+    # Instalar aplicativos via Snap
+    sudo apt install -y snapd
+    echo "Instalando aplicativos via Snap..."
+    sudo snap install spotify 	# Exemplo de aplicativo via Snap
+    sudo snap install slack     # Exemplo de aplicativo via Snap
+
+    # Instalar aplicativos via Flatpak
+    sudo apt install -y flatpak
+    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    echo "Instalando aplicativos via Flatpak..."
+    flatpak install -y flathub com.github.unactuallimit.steam # Exemplo de aplicativo via Flatpak
+    flatpak install -y flathub com.discordapp.Discord         # Exemplo de aplicativo via Flatpak
+
+
+echo "Sign in to Google Chrome. Press enter to continue..."
+read
+
+echo "Connect Google Account (System Settings -> Internet Accounts). Press enter to continue..."
+read
+
+echo "Sign in to Spotify. Press enter to continue..."
+read
+
+echo "Sign in to Discord. Press enter to continue..."
+read
+  
+
+    echo "Instalação de aplicativos e ferramentas concluída."
+}
